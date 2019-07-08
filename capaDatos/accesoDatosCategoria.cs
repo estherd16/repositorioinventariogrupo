@@ -128,8 +128,8 @@ namespace capaDatos
                 cm = new SqlCommand("agregarcategoria", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codcategoria", cat.codcategoria);
-                cm.Parameters.AddWithValue("@nombrecat", "");
-                cm.Parameters.AddWithValue("@descripcion", "");
+                cm.Parameters.AddWithValue("@nombrecat", cat.nombrecat);
+                cm.Parameters.AddWithValue("@descripcion", cat.descripcion);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -187,12 +187,6 @@ namespace capaDatos
             }
             return listaCategoria;
 
-        }
-
-
-        public int insertarCategoria(Usuarios us)
-        {
-            throw new NotImplementedException();
         }
     }
 }

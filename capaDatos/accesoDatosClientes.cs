@@ -141,11 +141,11 @@ namespace capaDatos
                 cm = new SqlCommand("Agregarcliente", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codcliente", clien.codcliente);
-                cm.Parameters.AddWithValue("@cedulacl", "");
-                cm.Parameters.AddWithValue("@nombrecli", "");
-                cm.Parameters.AddWithValue("@apellidos", "");
-                cm.Parameters.AddWithValue("@direccion", "");
-                cm.Parameters.AddWithValue("@telefono", "");
+                cm.Parameters.AddWithValue("@cedulacl", clien.cedulacl);
+                cm.Parameters.AddWithValue("@nombrecli", clien.nombrescli);
+                cm.Parameters.AddWithValue("@apellidos", clien.apellidos);
+                cm.Parameters.AddWithValue("@direccion", clien.direccion);
+                cm.Parameters.AddWithValue("@telefono", clien.telefono);
                 cm.Parameters.AddWithValue("@correo_cli", "");
 
                 cm.CommandType = CommandType.StoredProcedure;

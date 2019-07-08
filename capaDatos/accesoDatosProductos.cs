@@ -136,11 +136,11 @@ namespace capaDatos
                 cm = new SqlCommand("agregarproductos", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codproducto", produ.codproducto);
-                cm.Parameters.AddWithValue("@producto", "");
+                cm.Parameters.AddWithValue("@producto", produ.producto);
                 cm.Parameters.AddWithValue("@precio", "");
                 cm.Parameters.AddWithValue("@existencia", "");
-                cm.Parameters.AddWithValue("@codcategoria", produ.codcategoria);
-                cm.Parameters.AddWithValue("@codproveedor", produ.codproveedor);
+                cm.Parameters.AddWithValue("@codcategoria", "");
+                cm.Parameters.AddWithValue("@codproveedor", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();

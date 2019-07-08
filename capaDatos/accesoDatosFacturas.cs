@@ -99,7 +99,7 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@idFactura", dato);
                 cm.Parameters.AddWithValue("@fechaFactura", dato);
                 cm.Parameters.AddWithValue("@codcliente", "");
-                cm.Parameters.AddWithValue("@codempleado", dato);
+                cm.Parameters.AddWithValue("@codempleado", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();

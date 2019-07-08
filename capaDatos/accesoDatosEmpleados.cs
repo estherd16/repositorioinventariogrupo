@@ -139,12 +139,12 @@ namespace capaDatos
                 cm = new SqlCommand("agregarempleados", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codempleado", em.codempleado);
-                cm.Parameters.AddWithValue("@cedulaempleado", "");
-                cm.Parameters.AddWithValue("@nombre_emple", "");
-                cm.Parameters.AddWithValue("@apellidoemple", "");
-                cm.Parameters.AddWithValue("@telefonoempl", "");
-                cm.Parameters.AddWithValue("@direccionempl", "");
-                cm.Parameters.AddWithValue("@correoemple", em.correoemple);
+                cm.Parameters.AddWithValue("@cedulaempleado", em.cedulaempleado);
+                cm.Parameters.AddWithValue("@nombre_emple", em.nombre_emple);
+                cm.Parameters.AddWithValue("@apellidoemple", em.apellidoemple);
+                cm.Parameters.AddWithValue("@telefonoempl", em.telefonoempl);
+                cm.Parameters.AddWithValue("@direccionempl", em.direccionempl);
+                cm.Parameters.AddWithValue("@correoemple", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
