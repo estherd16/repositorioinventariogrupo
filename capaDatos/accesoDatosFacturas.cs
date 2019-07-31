@@ -67,11 +67,11 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Factura fact = new Factura();
-                    fac.idFactura = Convert.ToInt32(dr["Id Factura"].ToString());
-                    fac.fechaFactura = Convert.ToDateTime(dr["Fecha Factura"].ToString());
-                    fac.codcliente = Convert.ToInt32(dr["Cod Cliente"].ToString());
-                    fac.codempleado = Convert.ToInt32(dr["Cod Empleado"].ToString());
-                    listaFactura.Add(fac);
+                    fact.idFactura = Convert.ToInt32(dr["idFactura"].ToString());
+                    fact.fechaFactura = Convert.ToDateTime(dr["fechaFactura"].ToString());
+                    fact.codcliente = Convert.ToInt32(dr["codcliente"].ToString());
+                    fact.codempleado = Convert.ToInt32(dr["codempleado"].ToString());
+                    listaFactura.Add(fact);
                 }
                 indicador = 1;
             }
@@ -95,9 +95,9 @@ namespace capaDatos
             {
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarfacturas", cnx);
-                cm.Parameters.AddWithValue("@b", 5);
+                cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idFactura", dato);
-                cm.Parameters.AddWithValue("@fechaFactura", dato);
+                cm.Parameters.AddWithValue("@fechaFactura", "");
                 cm.Parameters.AddWithValue("@codcliente", "");
                 cm.Parameters.AddWithValue("@codempleado", "");
 
@@ -108,10 +108,10 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Factura f = new Factura();
-                    f.idFactura = Convert.ToInt32(dr["Id Factura"].ToString());
-                    f.fechaFactura = Convert.ToDateTime(dr["Fecha Factura"].ToString());
-                    f.codcliente = Convert.ToInt32(dr["Cod Cliente"].ToString());
-                    f.codempleado = Convert.ToInt32(dr["Cod Empleado"].ToString());
+                    f.idFactura = Convert.ToInt32(dr["idFactura"].ToString());
+                    f.fechaFactura = Convert.ToDateTime(dr["fechaFactura"].ToString());
+                    f.codcliente = Convert.ToInt32(dr["codcliente"].ToString());
+                    f.codempleado = Convert.ToInt32(dr["codempleado"].ToString());
                     listaFactura.Add(f);
                 }
             }

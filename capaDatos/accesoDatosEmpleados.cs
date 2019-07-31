@@ -74,12 +74,12 @@ namespace capaDatos
                 {
                     Empleados emp = new Empleados();
                     emp.codempleado = Convert.ToInt32(dr["codempleado"].ToString());
-                    emp.cedulaempleado = dr["cedula empleado"].ToString();
-                    emp.nombre_emple = dr["nombres empleado"].ToString();
-                    emp.apellidoemple = dr["apellidos empleado"].ToString();
-                    emp.telefonoempl = dr["telefono empleado"].ToString();
-                    emp.direccionempl = dr["direccion empleado"].ToString();
-                    emp.correoemple = dr["correo empleado"].ToString();
+                    emp.cedulaempleado = dr["cedulaempleado"].ToString();
+                    emp.nombre_emple = dr["nombre_emple"].ToString();
+                    emp.apellidoemple = dr["apellidoemple"].ToString();
+                    emp.telefonoempl = dr["telefonoempl"].ToString();
+                    emp.direccionempl = dr["direccionempl"].ToString();
+                    emp.correoemple = dr["correoemple"].ToString();
                     listaEmpleados.Add(emp);
                 }
                 
@@ -144,7 +144,7 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@apellidoemple", em.apellidoemple);
                 cm.Parameters.AddWithValue("@telefonoempl", em.telefonoempl);
                 cm.Parameters.AddWithValue("@direccionempl", em.direccionempl);
-                cm.Parameters.AddWithValue("@correoemple", "");
+                cm.Parameters.AddWithValue("@correoemple", em.correoemple);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -173,8 +173,8 @@ namespace capaDatos
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarempleados", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
-                cm.Parameters.AddWithValue("@codempleado", dato);
-                cm.Parameters.AddWithValue("@cedulaempleado",dato);
+                cm.Parameters.AddWithValue("@codempleado", "");
+                cm.Parameters.AddWithValue("@cedulaempleado","");
                 cm.Parameters.AddWithValue("@nombre_emple", dato);
                 cm.Parameters.AddWithValue("@apellidoemple", dato);
                 cm.Parameters.AddWithValue("@telefonoempl", "");
@@ -189,12 +189,12 @@ namespace capaDatos
                 {
                     Empleados ep = new Empleados();
                     ep.codempleado = Convert.ToInt32(dr["codempleado"].ToString());
-                    ep.cedulaempleado = dr["cedula empleado"].ToString();
-                    ep.nombre_emple = dr["nombres empleado"].ToString();
-                    ep.apellidoemple = dr["apellidos empleado"].ToString();
-                    ep.telefonoempl = dr["telefono empleado"].ToString();
-                    ep.direccionempl = dr["direccion empleado"].ToString();
-                    ep.correoemple = dr["correo empleado"].ToString();
+                    ep.cedulaempleado = dr["cedulaempleado"].ToString();
+                    ep.nombre_emple = dr["nombre_emple"].ToString();
+                    ep.apellidoemple = dr["apellidoemple"].ToString();
+                    ep.telefonoempl = dr["telefonoempl"].ToString();
+                    ep.direccionempl = dr["direccionempl"].ToString();
+                    ep.correoemple = dr["correoemple"].ToString();
                     listaEmpleados.Add(ep);
                 }
             }

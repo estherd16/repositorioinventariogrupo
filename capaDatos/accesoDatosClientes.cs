@@ -28,7 +28,7 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@b", 1);
                 cm.Parameters.AddWithValue("@codcliente", "");
                 cm.Parameters.AddWithValue("@cedulacl", cli.cedulacl);
-                cm.Parameters.AddWithValue("@nombrecli", cli.nombrescli);
+                cm.Parameters.AddWithValue("@nombrescli", cli.nombrescli);
                 cm.Parameters.AddWithValue("@apellidos", cli.apellidos);
                 cm.Parameters.AddWithValue("@direccion", cli.direccion);
                 cm.Parameters.AddWithValue("@telefono", cli.telefono);
@@ -61,7 +61,7 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@codcliente", "");
                 cm.Parameters.AddWithValue("@cedulacl", "");
-                cm.Parameters.AddWithValue("@nombrecli", "");
+                cm.Parameters.AddWithValue("@nombrescli", "");
                 cm.Parameters.AddWithValue("@apellidos", "");
                 cm.Parameters.AddWithValue("@direccion", "");
                 cm.Parameters.AddWithValue("@telefono", "");
@@ -75,12 +75,12 @@ namespace capaDatos
                 {
                     Clientes cl = new Clientes();
                     cl.codcliente = Convert.ToInt32(dr["codcliente"].ToString());
-                    cl.cedulacl = dr["cedula cliente"].ToString();
-                    cl.nombrescli = dr["nombres cliente"].ToString();
-                    cl.apellidos = dr["apellidos cliente"].ToString();
-                    cl.direccion = dr["direccion cliente"].ToString();
-                    cl.telefono = dr["telefono cliente"].ToString();
-                    cl.correo_cli = dr["correo cliente"].ToString();
+                    cl.cedulacl = dr["cedulacl"].ToString();
+                    cl.nombrescli = dr["nombrescli"].ToString();
+                    cl.apellidos = dr["apellidos"].ToString();
+                    cl.direccion = dr["direccion"].ToString();
+                    cl.telefono = dr["telefono"].ToString();
+                    cl.correo_cli = dr["correo_cli"].ToString();
                     listaClientes.Add(cl);
                 }
                 
@@ -142,11 +142,11 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codcliente", clien.codcliente);
                 cm.Parameters.AddWithValue("@cedulacl", clien.cedulacl);
-                cm.Parameters.AddWithValue("@nombrecli", clien.nombrescli);
+                cm.Parameters.AddWithValue("@nombrescli", clien.nombrescli);
                 cm.Parameters.AddWithValue("@apellidos", clien.apellidos);
                 cm.Parameters.AddWithValue("@direccion", clien.direccion);
                 cm.Parameters.AddWithValue("@telefono", clien.telefono);
-                cm.Parameters.AddWithValue("@correo_cli", "");
+                cm.Parameters.AddWithValue("@correo_cli", clien.correo_cli);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -175,9 +175,9 @@ namespace capaDatos
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("Agregarcliente", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
-                cm.Parameters.AddWithValue("@codcliente",dato);
-                cm.Parameters.AddWithValue("@cedulacl", dato);
-                cm.Parameters.AddWithValue("@nombrecli",dato);
+                cm.Parameters.AddWithValue("@codcliente","");
+                cm.Parameters.AddWithValue("@cedulacl", "");
+                cm.Parameters.AddWithValue("@nombrescli",dato);
                 cm.Parameters.AddWithValue("@apellidos",dato);
                 cm.Parameters.AddWithValue("@direccion", "");
                 cm.Parameters.AddWithValue("@telefono", "");
@@ -191,12 +191,12 @@ namespace capaDatos
                 {
                     Clientes cl = new Clientes();
                     cl.codcliente = Convert.ToInt32(dr["codcliente"].ToString());
-                    cl.cedulacl = dr["cedula cliente"].ToString();
-                    cl.nombrescli = dr["nombres cliente"].ToString();
-                    cl.apellidos = dr["apellidos cliente"].ToString();
-                    cl.direccion = dr["direccion cliente"].ToString();
-                    cl.telefono = dr["telefono cliente"].ToString();
-                    cl.correo_cli = dr["correo cliente"].ToString();
+                    cl.cedulacl = dr["cedulacl"].ToString();
+                    cl.nombrescli = dr["nombrescli"].ToString();
+                    cl.apellidos = dr["apellidos"].ToString();
+                    cl.direccion = dr["direccion"].ToString();
+                    cl.telefono = dr["telefono"].ToString();
+                    cl.correo_cli = dr["correo_cli"].ToString();
                     listaClientes.Add(cl);
                 }
             }

@@ -17,7 +17,7 @@ namespace capaNegocio
             return af.insertarFacturas(fa);
         }
 
-        public List<Factura> listarEmpleados()
+        public List<Factura> listarFacturas()
         {
             return af.listarFactura();
         }

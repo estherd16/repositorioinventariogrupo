@@ -23,11 +23,11 @@ namespace capaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("agregarcategorias", cnx);
+                cm = new SqlCommand("agregarcategoria", cnx);
                 cm.Parameters.AddWithValue("@b", 1);
                 cm.Parameters.AddWithValue("@codcategoria", "");
                 cm.Parameters.AddWithValue("@nombrecat", cat.nombrecat);
-                cm.Parameters.AddWithValue("@descripcion", cat.descripcion);
+                cm.Parameters.AddWithValue("@Descrpcion", cat.descripcion);
      
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -52,11 +52,11 @@ namespace capaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
-                cm = new SqlCommand("agregarcategorias", cnx);
+                cm = new SqlCommand("agregarcategoria", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@codcategoria", ""); 
                 cm.Parameters.AddWithValue("@nombrecat", "");
-                cm.Parameters.AddWithValue("@descripcion", "");
+                cm.Parameters.AddWithValue("@Descrpcion", "");
 
 
                 cm.CommandType = CommandType.StoredProcedure;
@@ -67,8 +67,8 @@ namespace capaDatos
                 {
                     Categoria c = new Categoria();
                     c.codcategoria = Convert.ToInt32(dr["codcategoria"].ToString());
-                    c.nombrecat = dr["nombre"].ToString();
-                    c.descripcion = dr["descripcion"].ToString();
+                    c.nombrecat = dr["nombrecat"].ToString();
+                    c.descripcion = dr["Descrpcion"].ToString();
                     listaCategoria.Add(c);
                     
                 }
@@ -100,7 +100,7 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@codcategoria", codcategoria);
                 cm.Parameters.AddWithValue("@nombrecat", "");
-                cm.Parameters.AddWithValue("@descripcion", "");
+                cm.Parameters.AddWithValue("@Descrpcion", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -129,7 +129,7 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codcategoria", cat.codcategoria);
                 cm.Parameters.AddWithValue("@nombrecat", cat.nombrecat);
-                cm.Parameters.AddWithValue("@descripcion", cat.descripcion);
+                cm.Parameters.AddWithValue("@Descrpcion", cat.descripcion);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -158,9 +158,9 @@ namespace capaDatos
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarcategoria", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
-                cm.Parameters.AddWithValue("@codcategoria", dato);
+                cm.Parameters.AddWithValue("@codcategoria", "");
                 cm.Parameters.AddWithValue("@nombrecat", dato);
-                cm.Parameters.AddWithValue("@descripcion", "");
+                cm.Parameters.AddWithValue("@Descrpcion", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -170,8 +170,8 @@ namespace capaDatos
                 {
                     Categoria c = new Categoria();
                     c.codcategoria = Convert.ToInt32(dr["codcategoria"].ToString());
-                    c.nombrecat = dr["nombre"].ToString();
-                    c.descripcion = dr["nombre"].ToString();
+                    c.nombrecat = dr["nombrecat"].ToString();
+                    c.descripcion = dr["Descrpcion"].ToString();
                     listaCategoria.Add(c);
                 }
             }

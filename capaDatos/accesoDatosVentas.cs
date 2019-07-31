@@ -73,7 +73,7 @@ namespace capaDatos
                     v.cantidad = Convert.ToInt32(dr["cantidad"].ToString());
                     v.precio = Convert.ToInt32(dr["precio"].ToString());
                     v.codproducto = Convert.ToInt32(dr["codproducto"].ToString());
-                    v.idFactura = Convert.ToInt32(dr["idfactura"].ToString());
+                    v.idFactura = Convert.ToInt32(dr["idFactura"].ToString());
                     listaVentas.Add(v);
                 }
                 indicador = 1;
@@ -99,7 +99,7 @@ namespace capaDatos
             {
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarventas", cnx);
-                cm.Parameters.AddWithValue("@b", 5);
+                cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@codventa", dato);
                 cm.Parameters.AddWithValue("@cantidad", "");
                 cm.Parameters.AddWithValue("@precio", "");
@@ -117,7 +117,7 @@ namespace capaDatos
                     vn.cantidad = Convert.ToInt32(dr["cantidad"].ToString());
                     vn.precio = Convert.ToInt32(dr["precio"].ToString());
                     vn.codproducto = Convert.ToInt32(dr["codproducto"].ToString());
-                    vn.idFactura = Convert.ToInt32(dr["idfactura"].ToString());
+                    vn.idFactura = Convert.ToInt32(dr["idFactura"].ToString());
                     listaVentas.Add(vn);
                 }
             }

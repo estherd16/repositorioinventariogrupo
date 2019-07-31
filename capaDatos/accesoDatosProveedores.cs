@@ -17,7 +17,7 @@ namespace capaDatos
         SqlDataReader dr = null;
         List<Proveedores> listaProveedores = null;
 
-        public int insertarProveedores(Proveedores cli)
+        public int insertarProveedores(Proveedores p)
         {
             try
             {
@@ -25,12 +25,12 @@ namespace capaDatos
 
                 cm = new SqlCommand("agregarproveedor", cnx);
                 cm.Parameters.AddWithValue("@b", 1);
-                cm.Parameters.AddWithValue("@codproveedores", "");
-                cm.Parameters.AddWithValue("@ruc", prov.ruc);
-                cm.Parameters.AddWithValue("@nombreprov", prov.nombreprov);
-                cm.Parameters.AddWithValue("@telefono", prov.telefono);
-                cm.Parameters.AddWithValue("@direccion", prov.direccion);
-                cm.Parameters.AddWithValue("@correoprov", prov.correoprov);
+                cm.Parameters.AddWithValue("@codproveedor", "");
+                cm.Parameters.AddWithValue("@ruc", p.ruc);
+                cm.Parameters.AddWithValue("@nombreprov", p.nombreprov);
+                cm.Parameters.AddWithValue("@telefono", p.telefono);
+                cm.Parameters.AddWithValue("@direccion", p.direccion);
+                cm.Parameters.AddWithValue("@correoprov", p.correoprov);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -58,11 +58,11 @@ namespace capaDatos
                 cm = new SqlCommand("agregarproveedor", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@codproveedor", "");
-                cm.Parameters.AddWithValue("@ruc", prov.ruc);
-                cm.Parameters.AddWithValue("@nombreprov", prov.nombreprov);
-                cm.Parameters.AddWithValue("@telefono", prov.telefono);
-                cm.Parameters.AddWithValue("@direccion", prov.direccion);
-                cm.Parameters.AddWithValue("@correoprov", prov.correoprov);
+                cm.Parameters.AddWithValue("@ruc", "");
+                cm.Parameters.AddWithValue("@nombreprov", "");
+                cm.Parameters.AddWithValue("@telefono", "");
+                cm.Parameters.AddWithValue("@direccion", "");
+                cm.Parameters.AddWithValue("@correoprov", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -71,12 +71,13 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Proveedores p = new Proveedores();
-                    prov.codproveedor = Convert.ToInt32(dr["codProveedor"].ToString());
-                    prov.ruc = dr["RUC"].ToString();
-                    prov.nombreprov = dr["nombre"].ToString();
-                    prov.telefono = dr["telefono"].ToString();
-                    prov.direccion = dr["direccion"].ToString();
-                    prov.correoprov = dr["correo"].ToString();
+                    p.codproveedor = Convert.ToInt32(dr["codproveedor"].ToString());
+                    p.ruc = dr["ruc"].ToString();
+                    p.nombreprov = dr["nombreprov"].ToString();
+                    p.telefono = dr["telefono"].ToString();
+                    p.direccion = dr["direccion"].ToString();
+                    p.correoprov = dr["correoprov"].ToString();
+                    listaProveedores.Add(p);
                  
                 }
                 indicador = 1;
@@ -128,19 +129,19 @@ namespace capaDatos
 
         }
 
-        public int editarProveedores(Proveedores codproveedor)
+        public int editarProveedores(Proveedores prv)
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarproveedor", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
-                cm.Parameters.AddWithValue("@codproveedor", prov.codproveedor);
-                cm.Parameters.AddWithValue("@ruc", prov.ruc);
-                cm.Parameters.AddWithValue("@nombreprov", prov.nombreprov);
-                cm.Parameters.AddWithValue("@telefono", prov.telefono);
-                cm.Parameters.AddWithValue("@direccion", "");
-                cm.Parameters.AddWithValue("@correoprov", "");
+                cm.Parameters.AddWithValue("@codproveedor", prv.codproveedor);
+                cm.Parameters.AddWithValue("@ruc", prv.ruc);
+                cm.Parameters.AddWithValue("@nombreprov", prv.nombreprov);
+                cm.Parameters.AddWithValue("@telefono", prv.telefono);
+                cm.Parameters.AddWithValue("@direccion", prv.direccion);
+                cm.Parameters.AddWithValue("@correoprov", prv.correoprov);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -169,8 +170,8 @@ namespace capaDatos
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarproveedor", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
-                cm.Parameters.AddWithValue("@codproveedor", dato);
-                cm.Parameters.AddWithValue("@ruc", dato);
+                cm.Parameters.AddWithValue("@codproveedor","");
+                cm.Parameters.AddWithValue("@ruc", "");
                 cm.Parameters.AddWithValue("@nombreprov", dato);
                 cm.Parameters.AddWithValue("@telefono", "");
                 cm.Parameters.AddWithValue("@direccion", "");
@@ -183,12 +184,12 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Proveedores p = new Proveedores();
-                    prov.codproveedor = Convert.ToInt32(dr["codProveedor"].ToString());
-                    prov.ruc = dr["RUC"].ToString();
-                    prov.nombreprov = dr["nombre"].ToString();
-                    prov.telefono = dr["telefono"].ToString();
-                    prov.direccion = dr["direccion"].ToString();
-                    prov.correoprov = dr["correo"].ToString();
+                    p.codproveedor = Convert.ToInt32(dr["codproveedor"].ToString());
+                    p.ruc = dr["ruc"].ToString();
+                    p.nombreprov = dr["nombreprov"].ToString();
+                    p.telefono = dr["telefono"].ToString();
+                    p.direccion = dr["direccion"].ToString();
+                    p.correoprov = dr["correoprov"].ToString();
                     listaProveedores.Add(p);
                 }
             }

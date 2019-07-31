@@ -12,6 +12,8 @@ namespace capaDatos
         Productos pro = new Productos();
         Conexion cn = new Conexion();
         SqlCommand cm = null;
+        SqlDataReader Leerfilas;
+
         int indicador = 0;
 
         SqlDataReader dr = null;
@@ -72,12 +74,12 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Productos pr = new Productos();
-                    pr.codproducto = Convert.ToInt32(dr["codigo producto"].ToString());
-                    pr.producto = dr["Producto"].ToString();
-                    pr.precio = Convert.ToInt32(dr["Precio producto"].ToString());
-                    pr.existencia = Convert.ToInt32(dr["Existencia Producto"].ToString());
-                    pr.codcategoria = Convert.ToInt32(dr["Codigo Categoria"].ToString());
-                    pr.codproveedor = Convert.ToInt32(dr["Codigo Proveedor"].ToString());
+                    pr.codproducto = Convert.ToInt32(dr["codproducto"].ToString());
+                    pr.producto = dr["producto"].ToString();
+                    pr.precio = Convert.ToInt32(dr["precio"].ToString());
+                    pr.existencia = Convert.ToInt32(dr["existencia"].ToString());
+                    pr.codcategoria = Convert.ToInt32(dr["codcategoria"].ToString());
+                    pr.codproveedor = Convert.ToInt32(dr["codproveedor"].ToString());
                     listaProductos.Add(pr);
                 }
                 indicador = 1;
@@ -137,10 +139,10 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@codproducto", produ.codproducto);
                 cm.Parameters.AddWithValue("@producto", produ.producto);
-                cm.Parameters.AddWithValue("@precio", "");
-                cm.Parameters.AddWithValue("@existencia", "");
-                cm.Parameters.AddWithValue("@codcategoria", "");
-                cm.Parameters.AddWithValue("@codproveedor", "");
+                cm.Parameters.AddWithValue("@precio", produ.precio);
+                cm.Parameters.AddWithValue("@existencia",produ.existencia);
+                cm.Parameters.AddWithValue("@codcategoria", produ.codcategoria);
+                cm.Parameters.AddWithValue("@codproveedor", produ.codproveedor);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -169,7 +171,7 @@ namespace capaDatos
                 SqlConnection cnx = cn.conectar();
                 cm = new SqlCommand("agregarproductos", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
-                cm.Parameters.AddWithValue("@codproducto", dato);
+                cm.Parameters.AddWithValue("@codproducto", "");
                 cm.Parameters.AddWithValue("@producto", dato);
                 cm.Parameters.AddWithValue("@precio", "");
                 cm.Parameters.AddWithValue("@existencia", "");
@@ -183,12 +185,12 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Productos p = new Productos();
-                    p.codproducto = Convert.ToInt32(dr["codigo producto"].ToString());
-                    p.producto = dr["Producto"].ToString();
-                    p.precio = Convert.ToInt32(dr["Precio producto"].ToString());
-                    p.existencia = Convert.ToInt32(dr["Existencia Producto"].ToString());
-                    p.codcategoria = Convert.ToInt32(dr["Codigo Categoria"].ToString());
-                    p.codproveedor = Convert.ToInt32(dr["Codigo Proveedor"].ToString());
+                    p.codproducto = Convert.ToInt32(dr["codproducto"].ToString());
+                    p.producto = dr["producto"].ToString();
+                    p.precio = Convert.ToInt32(dr["precio"].ToString());
+                    p.existencia = Convert.ToInt32(dr["existencia"].ToString());
+                    p.codcategoria = Convert.ToInt32(dr["codcategoria"].ToString());
+                    p.codproveedor = Convert.ToInt32(dr["codproveedor"].ToString());
                     listaProductos.Add(p);
                 }
             }
@@ -205,6 +207,7 @@ namespace capaDatos
             return listaProductos;
 
         }
+
     }
 }
 
