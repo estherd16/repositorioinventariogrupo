@@ -45,6 +45,7 @@
     <Compile Include="accesoDatosFacturas.cs" />
     <Compile Include="accesoDatosProductos.cs" />
     <Compile Include="accesoDatosProveedores.cs" />
+    <Compile Include="accesoDatosRespaldo.cs" />
     <Compile Include="accesoDatosVentas.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

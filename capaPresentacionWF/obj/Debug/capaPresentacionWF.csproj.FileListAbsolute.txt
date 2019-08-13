@@ -40,3 +40,5 @@ E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaPresentacionWF\obj\Debu
 E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaPresentacionWF\obj\Debug\capaPresentacionWF.FVentas.resources
 E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaPresentacionWF\obj\Debug\capaPresentacionWF.Properties.Resources.resources
 E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaPresentacionWF\obj\Debug\capaPresentacionWF.csproj.GenerateResource.Cache
+J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaPresentacionWF\obj\Debug\capaPresentacionWF.MDIInventario.resources
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaPresentacionWF\obj\Debug\capaPresentacionWF.MDIInventario.resources
