@@ -98,18 +98,21 @@ namespace capaPresentacionWF
         {
             textBoxcodproducto.Visible = false;
             labelcodigo.Visible = false;
+            //List<int> categ = new List<int>();
+            List<Categoria> categ1 = new List<Categoria>();
+            //categ = logicaNCAT.listarCategoria().Select(x => x.codcategoria).ToList();
+            categ1= logicaNCAT.listarCategoria();
+            //List<int> prov = new List<int>();
+            List<Proveedores> prove = new List<Proveedores>();
+            prove = logicaNPROVE.listarProveedores();
 
-
-
-            List<int> categ = new List<int>();
-            categ = logicaNCAT.listarCategoria().Select(x => x.codcategoria).ToList();
-            List<int> prov = new List<int>();
-            prov = logicaNPROVE.listarProveedores().Select(x => x.codproveedor).ToList();
-
-            comboBoxcodcat.DataSource = categ;
-            comboBoxcodprov.DataSource = prov;
+            comboBoxcodcat.ValueMember = "codcategoria";
+            comboBoxcodcat.DisplayMember = "nombrecat";
+            comboBoxcodcat.DataSource = categ1;
+            comboBoxcodprov.ValueMember = "codproveedor";
+            comboBoxcodprov.DisplayMember = "nombreprov";
+            comboBoxcodprov.DataSource = prove;
             dataGridViewProducto.DataSource = logicaNProd.listarProductos();
-
         }
 
         private void buttonEditarProducto_Click(object sender, EventArgs e)
