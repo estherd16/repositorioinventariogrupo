@@ -90,7 +90,7 @@
             // 
             this.comboBoxcodfact.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxcodfact.FormattingEnabled = true;
-            this.comboBoxcodfact.Location = new System.Drawing.Point(145, 287);
+            this.comboBoxcodfact.Location = new System.Drawing.Point(145, 280);
             this.comboBoxcodfact.Name = "comboBoxcodfact";
             this.comboBoxcodfact.Size = new System.Drawing.Size(265, 27);
             this.comboBoxcodfact.TabIndex = 29;
@@ -129,21 +129,21 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(52, 279);
+            this.label6.Location = new System.Drawing.Point(52, 275);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 38);
+            this.label6.Size = new System.Drawing.Size(77, 38);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Código \r\nfactura";
+            this.label6.Text = "Fecha \r\nFacturada";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(51, 230);
+            this.label4.Location = new System.Drawing.Point(51, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 38);
+            this.label4.Size = new System.Drawing.Size(72, 19);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Código \r\nproducto";
+            this.label4.Text = "Producto";
             // 
             // textBoxprecio
             // 
@@ -175,7 +175,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(52, 146);
+            this.label2.Location = new System.Drawing.Point(52, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 19);
             this.label2.TabIndex = 16;
@@ -246,7 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.tabVentas);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FVentas";
             this.Text = "Ventas";
             this.Load += new System.EventHandler(this.FVentas_Load);

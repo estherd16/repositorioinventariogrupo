@@ -3,8 +3,3 @@ J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\bin\Debug\cap
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\obj\Debug\capaEntidades.csprojResolveAssemblyReference.cache
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\obj\Debug\capaEntidades.dll
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\obj\Debug\capaEntidades.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\bin\Debug\capaEntidades.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\bin\Debug\capaEntidades.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\obj\Debug\capaEntidades.csprojResolveAssemblyReference.cache
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\obj\Debug\capaEntidades.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaEntidades\obj\Debug\capaEntidades.pdb

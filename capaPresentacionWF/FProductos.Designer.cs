@@ -103,7 +103,7 @@
             // 
             // textBoxexistencia
             // 
-            this.textBoxexistencia.Location = new System.Drawing.Point(177, 213);
+            this.textBoxexistencia.Location = new System.Drawing.Point(177, 212);
             this.textBoxexistencia.Name = "textBoxexistencia";
             this.textBoxexistencia.Size = new System.Drawing.Size(254, 26);
             this.textBoxexistencia.TabIndex = 13;
@@ -120,7 +120,7 @@
             // comboBoxcodprov
             // 
             this.comboBoxcodprov.FormattingEnabled = true;
-            this.comboBoxcodprov.Location = new System.Drawing.Point(177, 289);
+            this.comboBoxcodprov.Location = new System.Drawing.Point(177, 288);
             this.comboBoxcodprov.Name = "comboBoxcodprov";
             this.comboBoxcodprov.Size = new System.Drawing.Size(254, 28);
             this.comboBoxcodprov.TabIndex = 11;
@@ -128,7 +128,7 @@
             // comboBoxcodcat
             // 
             this.comboBoxcodcat.FormattingEnabled = true;
-            this.comboBoxcodcat.Location = new System.Drawing.Point(177, 249);
+            this.comboBoxcodcat.Location = new System.Drawing.Point(177, 248);
             this.comboBoxcodcat.Name = "comboBoxcodcat";
             this.comboBoxcodcat.Size = new System.Drawing.Size(254, 28);
             this.comboBoxcodcat.TabIndex = 10;
@@ -136,20 +136,20 @@
             // labelcodprov
             // 
             this.labelcodprov.AutoSize = true;
-            this.labelcodprov.Location = new System.Drawing.Point(25, 292);
+            this.labelcodprov.Location = new System.Drawing.Point(25, 291);
             this.labelcodprov.Name = "labelcodprov";
-            this.labelcodprov.Size = new System.Drawing.Size(135, 20);
+            this.labelcodprov.Size = new System.Drawing.Size(81, 20);
             this.labelcodprov.TabIndex = 9;
-            this.labelcodprov.Text = "Codigo Proveedor";
+            this.labelcodprov.Text = "Proveedor";
             // 
             // labelcodcate
             // 
             this.labelcodcate.AutoSize = true;
-            this.labelcodcate.Location = new System.Drawing.Point(25, 252);
+            this.labelcodcate.Location = new System.Drawing.Point(25, 251);
             this.labelcodcate.Name = "labelcodcate";
-            this.labelcodcate.Size = new System.Drawing.Size(132, 20);
+            this.labelcodcate.Size = new System.Drawing.Size(78, 20);
             this.labelcodcate.TabIndex = 8;
-            this.labelcodcate.Text = "Código Categoria";
+            this.labelcodcate.Text = "Categoria";
             // 
             // textBoxPrecioprod
             // 
@@ -161,7 +161,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 216);
+            this.label4.Location = new System.Drawing.Point(25, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 5;
@@ -274,7 +274,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 500);
             this.Controls.Add(this.tabProductos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FProductos";
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.FProductos_Load);

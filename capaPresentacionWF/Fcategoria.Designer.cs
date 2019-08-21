@@ -244,7 +244,7 @@
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.tabCategoria);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Fcategoria";
             this.Text = "Categorías";
             this.Load += new System.EventHandler(this.Fcategoria_Load);

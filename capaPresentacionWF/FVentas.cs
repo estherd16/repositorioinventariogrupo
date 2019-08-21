@@ -32,8 +32,8 @@ namespace capaPresentacionWF
                     Ventas objetoVentas = new Ventas();
                     objetoVentas.cantidad = Convert.ToInt32(textBoxcantidad.Text);
                     objetoVentas.precio = Convert.ToInt32(textBoxprecio.Text);
-                    objetoVentas.codproducto = Convert.ToInt32(comboBoxcodprod.Text);
-                    objetoVentas.idFactura = Convert.ToInt32(comboBoxcodfact.Text);
+                    objetoVentas.codproducto = Convert.ToInt32(comboBoxcodprod.SelectedValue.ToString());
+                    objetoVentas.idFactura = Convert.ToInt32(comboBoxcodfact.SelectedValue.ToString());
 
                     if (logicaNV.insertarVenta(objetoVentas)>0)
                     {
@@ -63,19 +63,17 @@ namespace capaPresentacionWF
             textBoxcodven.Visible = true;
             textBoxcodven.Enabled = false;
             labelcodigo.Visible = true;
-            
-            List<int> prod = new List<int>();
-            prod = logicaNPR.listarProductos().Select(x => x.codproducto).ToList();
-
-            List<int> fac = new List<int>();
-            fac = logicaNFA.listarFacturas().Select(x => x.idFactura).ToList();
-
+            List<Productos> prod = new List<Productos>();
+            prod = logicaNPR.listarProductos();
+            List<Factura> fac = new List<Factura>();
+            fac = logicaNFA.listarFacturas();
+            comboBoxcodprod.ValueMember = "codproducto";
+            comboBoxcodprod.DisplayMember = "producto";
             comboBoxcodprod.DataSource = prod;
+            comboBoxcodfact.ValueMember = "idFactura";
+            comboBoxcodfact.DisplayMember = "fechaFactura";
             comboBoxcodfact.DataSource = fac;
-
             dataGridViewVentas.DataSource = logicaNV.listarVentas();
-
-
         }
 
         private void textBoxBuscarVenta_TextChanged(object sender, EventArgs e)

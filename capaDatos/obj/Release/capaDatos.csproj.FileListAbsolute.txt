@@ -1,0 +1,7 @@
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Release\capaDatos.dll
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Release\capaDatos.pdb
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Release\capaEntidades.dll
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Release\capaEntidades.pdb
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Release\capaDatos.csprojResolveAssemblyReference.cache
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Release\capaDatos.dll
+E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Release\capaDatos.pdb

@@ -35,5 +35,6 @@ namespace capaNegocio
         {
             return ap.BuscarProductos(dato);
         }
+
     }
 }

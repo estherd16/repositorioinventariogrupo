@@ -5,10 +5,3 @@ J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Debug\capaEnt
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Debug\capaDatos.csprojResolveAssemblyReference.cache
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Debug\capaDatos.dll
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Debug\capaDatos.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Debug\capaDatos.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Debug\capaDatos.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Debug\capaEntidades.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\bin\Debug\capaEntidades.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Debug\capaDatos.csprojResolveAssemblyReference.cache
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Debug\capaDatos.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaDatos\obj\Debug\capaDatos.pdb

@@ -31,8 +31,8 @@ namespace capaPresentacionWF
                 {
                     Factura objetoFactura = new Factura();
                     objetoFactura.fechaFactura = Convert.ToDateTime(dateTimePickerFechaFac.Text);
-                    objetoFactura.codcliente = Convert.ToInt32(comboBoxCodCliente.Text);
-                    objetoFactura.codempleado = Convert.ToInt32(comboBoxCodEmpleado.Text);
+                    objetoFactura.codcliente = Convert.ToInt32(comboBoxCodCliente.SelectedValue.ToString());
+                    objetoFactura.codempleado = Convert.ToInt32(comboBoxCodEmpleado.SelectedValue.ToString());
                     
                     if (logicaNF.insertarFacturas(objetoFactura)>0)
                     {
@@ -63,16 +63,17 @@ namespace capaPresentacionWF
         {
             textBoxCodFac.Visible = false;
             labelcodigofac.Visible= false;
-
-            List <int> clien = new List <int>();
-            clien = logicaNCL.listarClientes().Select(x => x.codcliente).ToList();
-            List<int> emple = new List<int>();
-            emple = logicaNEM.listarEmpleados().Select(x => x.codempleado).ToList();
-
+            List <Clientes> clien = new List <Clientes>();
+            clien = logicaNCL.listarClientes();
+            List<Empleados> emple = new List<Empleados>();
+            emple = logicaNEM.listarEmpleados();
+            comboBoxCodCliente.ValueMember = "codcliente";
+            comboBoxCodCliente.DisplayMember = "nombrescli";
             comboBoxCodCliente.DataSource = clien;
+            comboBoxCodEmpleado.ValueMember = "codempleado";
+            comboBoxCodEmpleado.DisplayMember = "nombre_emple";
             comboBoxCodEmpleado.DataSource = emple;
             dataGridViewFactura.DataSource = logicaNF.listarFacturas();
-
         }
 
         private void textBoxBuscarFactura_TextChanged(object sender, EventArgs e)

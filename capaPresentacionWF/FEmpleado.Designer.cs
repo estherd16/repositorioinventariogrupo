@@ -328,9 +328,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.tabEmpleados);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FEmpleado";
-            this.Text = "FEmpleado";
+            this.Text = "Empleados";
             this.Load += new System.EventHandler(this.FEmpleado_Load);
             this.tabEmpleados.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

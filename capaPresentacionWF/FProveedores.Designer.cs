@@ -61,15 +61,16 @@
             this.tabProveedor.Controls.Add(this.tabPage1);
             this.tabProveedor.Controls.Add(this.tabPage2);
             this.tabProveedor.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.tabProveedor.Location = new System.Drawing.Point(1, 1);
-            this.tabProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabProveedor.Location = new System.Drawing.Point(3, 1);
+            this.tabProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.tabProveedor.Name = "tabProveedor";
             this.tabProveedor.SelectedIndex = 0;
-            this.tabProveedor.Size = new System.Drawing.Size(486, 458);
+            this.tabProveedor.Size = new System.Drawing.Size(493, 496);
             this.tabProveedor.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.buttonGuardarprov);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.textBoxcorreoprov);
@@ -84,19 +85,19 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.textBoxcodprov);
             this.tabPage1.Controls.Add(this.labelcod);
+            this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(478, 429);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(485, 467);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // buttonGuardarprov
             // 
             this.buttonGuardarprov.Location = new System.Drawing.Point(222, 364);
-            this.buttonGuardarprov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGuardarprov.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGuardarprov.Name = "buttonGuardarprov";
             this.buttonGuardarprov.Size = new System.Drawing.Size(112, 34);
             this.buttonGuardarprov.TabIndex = 13;
@@ -118,7 +119,7 @@
             // textBoxcorreoprov
             // 
             this.textBoxcorreoprov.Location = new System.Drawing.Point(135, 316);
-            this.textBoxcorreoprov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxcorreoprov.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxcorreoprov.Name = "textBoxcorreoprov";
             this.textBoxcorreoprov.Size = new System.Drawing.Size(300, 24);
             this.textBoxcorreoprov.TabIndex = 11;
@@ -136,7 +137,7 @@
             // textBoxdireccionprov
             // 
             this.textBoxdireccionprov.Location = new System.Drawing.Point(135, 272);
-            this.textBoxdireccionprov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxdireccionprov.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxdireccionprov.Name = "textBoxdireccionprov";
             this.textBoxdireccionprov.Size = new System.Drawing.Size(300, 24);
             this.textBoxdireccionprov.TabIndex = 9;
@@ -154,7 +155,7 @@
             // textBoxtelefprov
             // 
             this.textBoxtelefprov.Location = new System.Drawing.Point(135, 228);
-            this.textBoxtelefprov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxtelefprov.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxtelefprov.Name = "textBoxtelefprov";
             this.textBoxtelefprov.Size = new System.Drawing.Size(300, 24);
             this.textBoxtelefprov.TabIndex = 7;
@@ -172,7 +173,7 @@
             // textBoxnombreprov
             // 
             this.textBoxnombreprov.Location = new System.Drawing.Point(135, 181);
-            this.textBoxnombreprov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxnombreprov.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxnombreprov.Name = "textBoxnombreprov";
             this.textBoxnombreprov.Size = new System.Drawing.Size(300, 24);
             this.textBoxnombreprov.TabIndex = 5;
@@ -190,7 +191,7 @@
             // textBoxRUC
             // 
             this.textBoxRUC.Location = new System.Drawing.Point(135, 134);
-            this.textBoxRUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRUC.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRUC.Name = "textBoxRUC";
             this.textBoxRUC.Size = new System.Drawing.Size(300, 24);
             this.textBoxRUC.TabIndex = 3;
@@ -208,7 +209,7 @@
             // textBoxcodprov
             // 
             this.textBoxcodprov.Location = new System.Drawing.Point(135, 86);
-            this.textBoxcodprov.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxcodprov.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxcodprov.Name = "textBoxcodprov";
             this.textBoxcodprov.Size = new System.Drawing.Size(300, 24);
             this.textBoxcodprov.TabIndex = 1;
@@ -231,10 +232,10 @@
             this.tabPage2.Controls.Add(this.buttonEliminarProveedor);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(478, 429);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(485, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalles";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -242,7 +243,7 @@
             // textBoxBuscarProveedor
             // 
             this.textBoxBuscarProveedor.Location = new System.Drawing.Point(57, 53);
-            this.textBoxBuscarProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxBuscarProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxBuscarProveedor.Name = "textBoxBuscarProveedor";
             this.textBoxBuscarProveedor.Size = new System.Drawing.Size(237, 24);
             this.textBoxBuscarProveedor.TabIndex = 19;
@@ -250,17 +251,20 @@
             // 
             // dataGridViewProveedor
             // 
+            this.dataGridViewProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewProveedor.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProveedor.Location = new System.Drawing.Point(0, 87);
-            this.dataGridViewProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewProveedor.Location = new System.Drawing.Point(4, 121);
+            this.dataGridViewProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewProveedor.Name = "dataGridViewProveedor";
+            this.dataGridViewProveedor.RowHeadersVisible = false;
             this.dataGridViewProveedor.Size = new System.Drawing.Size(478, 342);
             this.dataGridViewProveedor.TabIndex = 18;
             // 
             // buttonEditarProveedor
             // 
             this.buttonEditarProveedor.Location = new System.Drawing.Point(302, 51);
-            this.buttonEditarProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEditarProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEditarProveedor.Name = "buttonEditarProveedor";
             this.buttonEditarProveedor.Size = new System.Drawing.Size(79, 28);
             this.buttonEditarProveedor.TabIndex = 17;
@@ -271,7 +275,7 @@
             // buttonEliminarProveedor
             // 
             this.buttonEliminarProveedor.Location = new System.Drawing.Point(389, 51);
-            this.buttonEliminarProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEliminarProveedor.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEliminarProveedor.Name = "buttonEliminarProveedor";
             this.buttonEliminarProveedor.Size = new System.Drawing.Size(81, 28);
             this.buttonEliminarProveedor.TabIndex = 16;
@@ -294,13 +298,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(497, 494);
             this.Controls.Add(this.tabProveedor);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FProveedores";
-            this.Text = "FProveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Proveedores";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FProveedores_Load);
             this.tabProveedor.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

@@ -7,12 +7,3 @@ J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaE
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\obj\Debug\capaNegocio.csprojResolveAssemblyReference.cache
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\obj\Debug\capaNegocio.dll
 J:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\obj\Debug\capaNegocio.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaNegocio.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaNegocio.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaDatos.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaEntidades.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaDatos.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\bin\Debug\capaEntidades.pdb
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\obj\Debug\capaNegocio.csprojResolveAssemblyReference.cache
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\obj\Debug\capaNegocio.dll
-E:\IV\PROGRAMACION BASES DE DATOS\proyectoinventario\capaNegocio\obj\Debug\capaNegocio.pdb

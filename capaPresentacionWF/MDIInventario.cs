@@ -140,6 +140,7 @@ namespace capaPresentacionWF
             {
                 FProveedores fv = new FProveedores();
                 fv.MdiParent = this;
+                fv.BringToFront();
                 fv.Show();
             }
         }

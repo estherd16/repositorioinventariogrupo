@@ -35,8 +35,8 @@ namespace capaPresentacionWF
                     objetoProductos.producto = textBoxNombreproducto.Text;
                     objetoProductos.precio = Convert.ToInt32(textBoxPrecioprod.Text);
                     objetoProductos.existencia = Convert.ToInt32(textBoxexistencia.Text);
-                    objetoProductos.codcategoria = Convert.ToInt32(comboBoxcodcat.Text);
-                    objetoProductos.codproveedor = Convert.ToInt32(comboBoxcodprov.Text);
+                    objetoProductos.codcategoria = Convert.ToInt32(comboBoxcodcat.SelectedValue.ToString());
+                    objetoProductos.codproveedor = Convert.ToInt32(comboBoxcodprov.SelectedValue.ToString());
                  
                     if (logicaNProd.insertarProductos(objetoProductos) > 0)
                     {
@@ -71,7 +71,9 @@ namespace capaPresentacionWF
                     if (logicaNProd.editarProductos(objetoProductos)>0)
                     {
                         MessageBox.Show("Actualizado con éxito");
+                        
                         dataGridViewProducto.DataSource = logicaNProd.listarProductos();
+
                         textBoxNombreproducto.Text = "";
                         textBoxPrecioprod.Text = "";
                         textBoxexistencia.Text = "";
@@ -98,14 +100,10 @@ namespace capaPresentacionWF
         {
             textBoxcodproducto.Visible = false;
             labelcodigo.Visible = false;
-            //List<int> categ = new List<int>();
             List<Categoria> categ1 = new List<Categoria>();
-            //categ = logicaNCAT.listarCategoria().Select(x => x.codcategoria).ToList();
             categ1= logicaNCAT.listarCategoria();
-            //List<int> prov = new List<int>();
             List<Proveedores> prove = new List<Proveedores>();
             prove = logicaNPROVE.listarProveedores();
-
             comboBoxcodcat.ValueMember = "codcategoria";
             comboBoxcodcat.DisplayMember = "nombrecat";
             comboBoxcodcat.DataSource = categ1;
@@ -120,21 +118,18 @@ namespace capaPresentacionWF
             textBoxcodproducto.Visible = true;
             textBoxcodproducto.Enabled = false;
             labelcodigo.Visible = true;
-
             comboBoxcodcat.Visible = true;
             comboBoxcodcat.Enabled = false;
             labelcodcate.Visible = true;
             comboBoxcodprov.Visible = true;
             comboBoxcodprov.Enabled = false;
             labelcodprov.Visible = true;
-
             textBoxcodproducto.Text = dataGridViewProducto.CurrentRow.Cells["codproducto"].Value.ToString();
             textBoxNombreproducto.Text = dataGridViewProducto.CurrentRow.Cells["producto"].Value.ToString();
             textBoxPrecioprod.Text = dataGridViewProducto.CurrentRow.Cells["precio"].Value.ToString();
             textBoxexistencia.Text = dataGridViewProducto.CurrentRow.Cells["existencia"].Value.ToString();
             comboBoxcodcat.Text = dataGridViewProducto.CurrentRow.Cells["codcategoria"].Value.ToString();
             comboBoxcodprov.Text = dataGridViewProducto.CurrentRow.Cells["codproveedor"].Value.ToString();
-
             tabProductos.SelectedTab = tabPage1;
             buttonGuardar.Text = "Actualizar";
         }

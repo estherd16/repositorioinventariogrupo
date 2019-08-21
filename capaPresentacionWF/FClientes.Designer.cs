@@ -98,21 +98,21 @@
             // 
             // textBoxCorreoCli
             // 
-            this.textBoxCorreoCli.Location = new System.Drawing.Point(141, 310);
+            this.textBoxCorreoCli.Location = new System.Drawing.Point(141, 312);
             this.textBoxCorreoCli.Name = "textBoxCorreoCli";
             this.textBoxCorreoCli.Size = new System.Drawing.Size(256, 27);
             this.textBoxCorreoCli.TabIndex = 16;
             // 
             // textBoxTelefonoCli
             // 
-            this.textBoxTelefonoCli.Location = new System.Drawing.Point(141, 272);
+            this.textBoxTelefonoCli.Location = new System.Drawing.Point(141, 274);
             this.textBoxTelefonoCli.Name = "textBoxTelefonoCli";
             this.textBoxTelefonoCli.Size = new System.Drawing.Size(256, 27);
             this.textBoxTelefonoCli.TabIndex = 15;
             // 
             // textBoxDireccionCli
             // 
-            this.textBoxDireccionCli.Location = new System.Drawing.Point(141, 235);
+            this.textBoxDireccionCli.Location = new System.Drawing.Point(141, 237);
             this.textBoxDireccionCli.Name = "textBoxDireccionCli";
             this.textBoxDireccionCli.Size = new System.Drawing.Size(256, 27);
             this.textBoxDireccionCli.TabIndex = 14;
@@ -121,7 +121,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(50, 311);
+            this.label8.Location = new System.Drawing.Point(50, 313);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 19);
             this.label8.TabIndex = 12;
@@ -131,7 +131,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(45, 275);
+            this.label7.Location = new System.Drawing.Point(45, 277);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 19);
             this.label7.TabIndex = 11;
@@ -141,7 +141,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(45, 238);
+            this.label6.Location = new System.Drawing.Point(45, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 19);
             this.label6.TabIndex = 10;
@@ -171,11 +171,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 202);
+            this.label4.Location = new System.Drawing.Point(45, 205);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 19);
+            this.label4.Size = new System.Drawing.Size(74, 19);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Apellido";
+            this.label4.Text = "Apellidos";
             // 
             // label3
             // 
@@ -183,9 +183,9 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(45, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Nombre";
+            this.label3.Text = "Nombres";
             // 
             // label2
             // 
@@ -209,7 +209,7 @@
             // 
             // textBoxApellidoCli
             // 
-            this.textBoxApellidoCli.Location = new System.Drawing.Point(141, 199);
+            this.textBoxApellidoCli.Location = new System.Drawing.Point(141, 201);
             this.textBoxApellidoCli.Name = "textBoxApellidoCli";
             this.textBoxApellidoCli.Size = new System.Drawing.Size(256, 27);
             this.textBoxApellidoCli.TabIndex = 3;
@@ -305,7 +305,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.tabControlClientes);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FClientes";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FClientes_Load);

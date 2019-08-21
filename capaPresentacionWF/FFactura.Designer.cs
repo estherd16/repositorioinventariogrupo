@@ -142,9 +142,9 @@
             this.labelcodemple.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelcodemple.Location = new System.Drawing.Point(9, 240);
             this.labelcodemple.Name = "labelcodemple";
-            this.labelcodemple.Size = new System.Drawing.Size(134, 19);
+            this.labelcodemple.Size = new System.Drawing.Size(79, 19);
             this.labelcodemple.TabIndex = 4;
-            this.labelcodemple.Text = "Codigo Empleado";
+            this.labelcodemple.Text = "Empleado";
             // 
             // labelcodcliente
             // 
@@ -152,9 +152,9 @@
             this.labelcodcliente.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelcodcliente.Location = new System.Drawing.Point(9, 196);
             this.labelcodcliente.Name = "labelcodcliente";
-            this.labelcodcliente.Size = new System.Drawing.Size(112, 19);
+            this.labelcodcliente.Size = new System.Drawing.Size(57, 19);
             this.labelcodcliente.TabIndex = 3;
-            this.labelcodcliente.Text = "Codigo Cliente";
+            this.labelcodcliente.Text = "Cliente";
             // 
             // label2
             // 
@@ -220,7 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.tabFactura);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FFactura";
             this.Text = "Factura";
             this.Load += new System.EventHandler(this.FFactura_Load);

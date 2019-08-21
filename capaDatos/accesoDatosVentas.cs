@@ -132,7 +132,6 @@ namespace capaDatos
                 cm.Connection.Close();
             }
             return listaVentas;
-
         }
     }
 }
